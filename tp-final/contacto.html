@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Vino y Cultura</title>
+    
+</head>
+<body>
+    <header class="encabezado">
+        <!--Aca es donde deberia ir el logo de la pagina y lo href<img src="images/logo-vino.jpg" alt="lodo de la vinoteca"> -->
+        <div class="logo">
+            <h1>Vino y Cultura</h1>
+            <div class="menu-mobile" id="menu-mobile">
+                <a><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <ul class="botonera">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Nuestros Vinos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="clientes.html">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-form">
+
+        <div class="contacto">
+            <h2>Colabora con nosotros</h2>
+            <p>¡Tus opiniones nos hacen crecer día a día!
+                Ya sea por consultas, reservas, pedidos o recomendaciones estamos a tu disposición.</p>
+        </div>
+        
+    
+        <div class="formulario">
+            <form action="" id="formularioCaptcha">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" placeholder="Apellido" required>
+                <input type="mail" name="mail" placeholder="Mail" required>
+                <input type="tel" name="telefono" placeholder="Telefono" required>
+
+
+                <div id="valorCaptcha">ValorCaptcha</div>
+                <input type="text" id="captchaTexto" placeholder="Ingrese el Captcha" required>
+                
+                <button  id="captchaButton">Verificar Captcha</button>
+                <button id="btn-enviar">Enviar consulta</button>
+            </form>
+        </div>
+
+    </main>
+    <!--MEDIO DE PAGOS-->
+
+
+
+    <footer class="footer">
+
+        <div class="pagos">
+            <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
+            <a href="#"><i class="fa-brands fa-cc-mastercard"></i></a>
+            <a href="#"><i class="fa-brands fa-cc-apple-pay"></i></a>
+            
+            <p>© 2024. Vino y Cultura - Tandil, Argentina
+                Beber con moderación. Prohibida su venta a menores de 18 años. // Drink responsibly
+            </p>
+        </div>
+        
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

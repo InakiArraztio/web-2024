@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vino y Cultura</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="encabezado">
+            <div class="logo">
+                <h1>Vino y Cultura</h1>
+                    <div class="menu-mobile" id="menu-mobile">
+                        <a><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                <nav class="menu">
+                    <ul class="botonera">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Nuestros Vinos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="clientes.html">Productos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <div class="intro-clientes">
+        <p>En Vino y Cultura estamos orgullosos de todos nuestros trabajos realizados y siempre nos destacaremos por nuestra transparencia. Por dicha razón, le proponemos a los clientes que hayan quedado satisfechos con nosotros, que carguen ellos mismos sus referencias y le cuenten a futuros visitantes cómo fue su experiencia. A continuación les dejaremos campos vacíos para que puedan completar con sus datos y así ponersea disposición de quién lo requiera.      
+        </p>
+    </div>
+
+    <section class="formulario-json">
+        <form action="" id="form-dinamico">
+            <input type="text" id="nombreCompleto" placeholder="Nombre y Apellido" required>
+            <input type="email" id="email" placeholder="Email" required>
+    
+            <button type="button" id="btnAgregar">Agregar</button>
+            <button type="button" id="btnLimpiar">Limpiar tabla</button>
+            
+            <input type="text" id="filtroBusqueda" placeholder="Buscar...">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre y Apellido</th>
+                        <th>Email</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+    
+                <tbody id="tabla">
+                    <!-- Aquí se agregarán dinámicamente las filas de la tabla -->
+                </tbody>
+            </table>
+        </form>
+    </section>
+    
+
+              
+  
+
+
+
+    <footer class="footer">
+
+        <div class="pagos">
+            <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
+            <a href="#"><i class="fa-brands fa-cc-mastercard"></i></a>
+            <a href="#"><i class="fa-brands fa-cc-apple-pay"></i></a>
+            
+            <p>© 2024. Vino y Cultura - Tandil, Argentina
+                Beber con moderación. Prohibida su venta a menores de 18 años. // Drink responsibly
+            </p>
+        </div>
+        
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/tablaDinamica.js"></script>
+</body>
+</html>
